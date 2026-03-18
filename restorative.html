@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restorative Dentistry - 100SMILES Dental Care</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header style="position: relative;">
+        <h1>Restorative Dentistry</h1>
+        <nav>
+            <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+            <ul id="nav-links" class="expanded"> 
+              <li><a href="index.html">Home</a></li>
+              <li><a href="about.html">About Us</a></li>
+              <li><a href="services.html">Services</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </nav>
+    </header>
+    
+    <section>
+        <img src="images/AdobeStock_454644101.jpeg" alt="Restorative Dental Tools" style="max-width: 250px; display: block; margin: 0 auto;"> 
+        
+        <p>Restorative Dentistry helps repair and restore damaged or missing teeth.</p>
+        <p>Our goal is to bring back your natural smile and improve chewing and speaking comfort.</p>
+        <p>We offer treatments like: dental crowns, dentures, root canal treatment.</p>
+        <p>Our team ensures that your restored teeth look natural and feel comfortable, so you can smile with confidence again.</p>
+    </section>
+    
+    <footer>
+        <p>&copy; 2025 100SMILES Dental Care. All Rights Reserved.</p>
+    </footer>
+
+    <script>
+        function toggleMenu() {
+            const nav = document.getElementById("nav-links");
+            nav.classList.toggle("collapsed");
+            nav.classList.toggle("expanded");
+        }
+        </script>
+        
+</body>
+</html>

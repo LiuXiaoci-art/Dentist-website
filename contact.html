@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - 100SMILES Dental Care</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header style="position: relative;">
+        <h1>Contact Us</h1>
+        <nav>
+            <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+            <ul id="nav-links" class="expanded"> 
+              <li><a href="index.html">Home</a></li>
+              <li><a href="about.html">About Us</a></li>
+              <li><a href="services.html">Services</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </nav>
+        
+    </header>
+    
+    <section>
+        <h2>Get in Touch</h2>
+        <p>We'd love to hear from you! Contact us through the details below or send us a message using the contact form.</p>
+        <img src="images/AdobeStock_262111000.jpeg" alt="Contact Us">
+        
+        <h3>Contact Information</h3>
+        <p><strong>Phone:</strong> <a href="tel:0750005599">07 5000 5599</a></p>
+        <p><strong>Fax:</strong> <a href="tel:0745679999">07 4567 9999</a></p>
+        <p><strong>Email:</strong> <a href="mailto:admin@100smilesdentalcare.com.au">admin@100smilesdentalcare.com.au</a></p>
+
+        <p><strong>Address:</strong> 33 Fantail Street, Razole, Queensland</p>
+        <p><strong>Trading Hours:</strong></p>
+        <ul>
+            <li>Monday - Friday: 8:30 AM - 6:30 PM</li>
+            <li>Saturday - Sunday: 8:30 AM - 1:00 PM</li>
+        </ul>
+    </section>
+    
+    <section>
+        <h2>Online Booking Form</h2>
+        <form id="bookingForm">
+            <label for="fullname">Full Name:</label>
+            <input type="text" id="fullname" name="fullname" required>
+    
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="email" required>
+    
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" required pattern="\d{8}">
+    
+            <label for="date">Preferred Appointment Date:</label>
+            <input type="date" id="date" name="date" required>
+    
+            <label for="service">Service Type:</label>
+            <select id="service" name="service" required>
+                <option value="">-- Please select --</option>
+                <option value="preventive">Preventive Check-Up</option>
+                <option value="restorative">Restorative Treatment</option>
+            </select>
+    
+            <label><input type="checkbox" id="consent" required> I agree to be contacted.</label>
+    
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+    
+    <footer>
+        <p>&copy; 2025 100SMILES Dental Care. All Rights Reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        function toggleMenu() {
+            const nav = document.getElementById("nav-links");
+            nav.classList.toggle("collapsed");
+            nav.classList.toggle("expanded");
+        }
+        </script>
+        
+</body>
+</html>

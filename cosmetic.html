@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cosmetic Dentistry - 100SMILES Dental Care</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header style="position: relative;">
+        <h1>Cosmetic Dentistry</h1>
+        <nav>
+            <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+            <ul id="nav-links" class="expanded"> 
+              <li><a href="index.html">Home</a></li>
+              <li><a href="about.html">About Us</a></li>
+              <li><a href="services.html">Services</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </nav>
+    </header>
+    
+    <section>
+        <img src="images/AdobeStock_297288948.jpeg" alt="Cosmetic Dental Care" style="max-width: 250px; display: block; margin: 0 auto;">
+
+        <p>Cosmetic dentistry focuses on improving the appearance of your teeth and smile. Treatments like teeth whitening, veneers, and dental bonding can help you feel more confident and enhance your overall look.</p>
+    </section>
+    
+    <footer>
+        <p>&copy; 2025 100SMILES Dental Care. All Rights Reserved.</p>
+    </footer>
+
+    <script>
+        function toggleMenu() {
+            const nav = document.getElementById("nav-links");
+            nav.classList.toggle("collapsed");
+            nav.classList.toggle("expanded");
+        }
+        </script>
+        
+</body>
+</html>
